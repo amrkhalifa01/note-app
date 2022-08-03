@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/note-app/static/css/main.1589050a.css",
+    "main.css": "/note-app/static/css/main.faf554fa.css",
     "main.js": "/note-app/static/js/main.797516c9.js",
     "static/js/787.a2227408.chunk.js": "/note-app/static/js/787.a2227408.chunk.js",
     "static/media/fa-solid-900.ttf": "/note-app/static/media/fa-solid-900.e615bbcb258550973c16.ttf",
@@ -12,12 +12,12 @@
     "static/media/fa-v4compatibility.ttf": "/note-app/static/media/fa-v4compatibility.4baccb548138840fa33a.ttf",
     "static/media/fa-v4compatibility.woff2": "/note-app/static/media/fa-v4compatibility.afac89562a5301459069.woff2",
     "index.html": "/note-app/index.html",
-    "main.1589050a.css.map": "/note-app/static/css/main.1589050a.css.map",
+    "main.faf554fa.css.map": "/note-app/static/css/main.faf554fa.css.map",
     "main.797516c9.js.map": "/note-app/static/js/main.797516c9.js.map",
     "787.a2227408.chunk.js.map": "/note-app/static/js/787.a2227408.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1589050a.css",
+    "static/css/main.faf554fa.css",
     "static/js/main.797516c9.js"
   ]
 }
