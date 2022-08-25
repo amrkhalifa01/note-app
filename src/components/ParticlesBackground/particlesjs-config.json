@@ -1,0 +1,114 @@
+{
+  "background": {
+    "color": "#000"
+  },
+  "fpsLimit": 60,
+  "interactivity": {
+    "detectsOn": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 150,
+        "line_linked": {
+          "opacity": 0.5
+        }
+      },
+      "bubble": {
+        "distance": 250,
+        "size": 0,
+        "duration": 2,
+        "opacity": 0,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 400,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "fullScreen": {
+    "zIndex": -1
+  },
+  "particles": {
+    "color": {
+      "value": "#fff"
+    },
+    "number": {
+      "density": {
+        "enable": true,
+        "area": 800
+      },
+      "limit": 0,
+      "value": 300
+    },
+    "opacity": {
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0,
+        "sync": false
+      },
+      "random": {
+        "enable": true,
+        "minimumValue": 0.05
+      },
+      "value": 1
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      }
+    },
+    "size": {
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "size_min": 0.3,
+        "sync": false
+      },
+      "random": {
+        "enable": true,
+        "minimumValue": 0.5
+      },
+      "value": 1
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 0.4,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 600
+      }
+    }
+  }
+}
