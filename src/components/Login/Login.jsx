@@ -30,7 +30,7 @@ export default function Login() {
       setIsLoading(false);
     } else {
       setErrorsList([]);
-      let { data } = await Axios.post(`https://route-egypt-api.herokuapp.com/signin`, user);
+      let { data } = await Axios.post(`https://routeegypt.herokuapp.com/signin`, user);
       if (data.message === "success") {
         localStorage.setItem("userToken", data.token);
         saveUserData();
