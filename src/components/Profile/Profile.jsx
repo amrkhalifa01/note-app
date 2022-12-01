@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 import styles from "./Profile.module.css";
 
 export default function Profile() {
-  let baseUrl = "https://routeegypt.herokuapp.com/";
+  let baseUrl = "https://route-egypt-api.herokuapp.com/";
   let token = localStorage.getItem("userToken");
   let decoded = jwtDecode(token);
   const [userNotes, setUserNotes] = useState([]);
@@ -16,7 +16,7 @@ export default function Profile() {
     title: "",
     desc: "",
     token,
-    citizenID: decoded._id,
+    userID: decoded._id,
   });
   const [titleField, setTitleField] = useState("");
   const [descField, setDescField] = useState("");
@@ -37,9 +37,8 @@ export default function Profile() {
     }
   }
   async function getNotes() {
-    let { data } = await axios.post(`${baseUrl}getUserNotes`, {
-      token,
-      userID: decoded._id,
+    let { data } = await axios.get(`${baseUrl}getUserNotes`, {
+      headers: { token, userID: decoded._id },
     });
     if (data.message === "success") {
       setUserNotes(data.Notes);

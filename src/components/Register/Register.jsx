@@ -34,7 +34,7 @@ export default function Register() {
       setIsLoading(false);
     } else {
       setErrorsList([]);
-      let { data } = await Axios.post(`https://routeegypt.herokuapp.com/signup`, user);
+      let { data } = await Axios.post(`https://route-egypt-api.herokuapp.com/signup`, user);
       if (data.message === "success") {
         navigate("/login");
         setIsLoading(false);

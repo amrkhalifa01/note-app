@@ -15,7 +15,7 @@ export default function UserDataProvider(props) {
   }
   function logout() {
     setUserData(null);
-    localStorage.clear("userToken");
+    localStorage.removeItem("userToken");
   }
   useEffect(() => {
     if (localStorage.getItem("userToken")) {
