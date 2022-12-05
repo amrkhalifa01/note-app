@@ -34,7 +34,7 @@ export default function Register() {
       setIsLoading(false);
     } else {
       setErrorsList([]);
-      let { data } = await Axios.post(`https://route-egypt-api.herokuapp.com/signup`, user);
+      let { data } = await Axios.post(`https://sticky-note-fe.vercel.app/signup`, user);
       if (data.message === "success") {
         navigate("/login");
         setIsLoading(false);
